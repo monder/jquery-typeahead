@@ -1060,6 +1060,9 @@
                                     break;
                                 }
                             }
+                            if (ajaxObj.json === true) {
+                                ajaxObj.data = JSON.stringify(ajaxObj.data);
+                            }  
                         }
 
                         // Same Domain / public API
